@@ -12,7 +12,7 @@ async function FilterTypes (typeId, callback) {
       const modDispatch = ({type, payload}) => {
         const modifiedResults = payload.reduce( (array, p) => {
             if(parseInt(getPokemonId(p.pokemon.url)) <= 151){
-            return array = [...array, p.pokemon];
+              return array = [...array, p.pokemon];
             } 
             return array;
         }, [])

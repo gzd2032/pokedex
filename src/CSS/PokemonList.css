@@ -1,8 +1,10 @@
 .pokemonList{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
+    
   }
 
 .pokemonList a {
@@ -13,4 +15,11 @@
 .pokemonList a:hover,
 .pokemonList a:focus{
     color: black;
+}
+
+
+@media (min-width: 1000px) {
+    .pokemonList{
+        flex-direction: row;
+    }
 }
