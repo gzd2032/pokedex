@@ -1,0 +1,34 @@
+.staticInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.pokemonType{
+    padding: 5px;
+}
+
+.buttonBar{
+    padding: 10px;
+
+}
+
+.buttonBar a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(197, 197, 197);
+    border: thin solid black;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.buttonBar a:hover{
+    box-shadow: 0 0 10px 0 rgb(33, 110, 253);
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,12 @@
+.typeFilter {
+    font-size: 1em;
+    margin: .25em;
+}
+
+.typeFilter select {
+    padding: .25em;
+    font-size: 1em;
+    margin: .25em;
+    border: thin solid rgb(72, 131, 241);
+    border-radius: .5em;
+}
