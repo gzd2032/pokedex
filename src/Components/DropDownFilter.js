@@ -7,7 +7,7 @@ const DropDownFilter = () => {
     const { state, dispatch } = useContext(PokeContext)
     
     const handleFilterByTypes = (e) => {
-        if (state.types) {
+        if (state.types && e.target.value) {
             FilterTypes(e.target.value, dispatch)
         }
     }
@@ -22,7 +22,7 @@ const DropDownFilter = () => {
                   state.types && state.types.map( t => {
                     const urlArray = t.url.split("/")
                     const typeId = urlArray[6]
-                    return ( <option value={typeId}> {t.name}   </option> )
+                    return ( <option key={t.name} value={typeId}> {t.name}   </option> )
                   })
                 }
               </select>

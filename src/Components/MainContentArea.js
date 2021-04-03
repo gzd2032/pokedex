@@ -1,13 +1,11 @@
-import { useContext } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import PokeContext from '../context/pokeContext.js'
 
 import Home from './Home'
 import PokemonDetails from './PokemonDetails'
 import About from './About'
 
+
 const MainContentArea = () => {
-    const { state, dispatch } = useContext(PokeContext)
     return (
         <main>
         <Switch>

@@ -5,7 +5,7 @@ import DropdownFilter from './DropDownFilter.js'
 
 
 const Home = ({match}) => {
-    const { state, dispatch } = useContext(PokeContext)
+    const { state } = useContext(PokeContext)
 
     return (
         <>

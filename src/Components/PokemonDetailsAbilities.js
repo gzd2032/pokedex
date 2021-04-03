@@ -1,9 +1,12 @@
+import MakeNameUpperCase from '../utils/MakeNameUpperCase.js'
+
 function PokemonDetailsAbilities({pokemon}){
     return(
         <>
+            <h3>Abilities: </h3>
             { 
                 pokemon.abilities.map(a =>{
-                    const abilityName = a.ability.name.slice(0,1).toUpperCase() + a.ability.name.slice(1);
+                    const abilityName = MakeNameUpperCase(a.ability.name);
                     return (
                         <div key={abilityName} className="pokemonAbility">
                             {abilityName}

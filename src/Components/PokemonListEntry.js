@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import getPokemonId from '../utils/GetPokemonId.js'
 import MakeNameUpperCase from '../utils/MakeNameUpperCase.js'
 
-function PokemonEntry({pokemon}){
+function PokemonListEntry({pokemon}){
     // console.log("Pokemon.name", pokemon.name)
     const pokemonName = MakeNameUpperCase(pokemon.name);
     const pokeId = getPokemonId(pokemon.url)
@@ -18,7 +18,7 @@ function PokemonEntry({pokemon}){
 }
 
 
-export default PokemonEntry;
+export default PokemonListEntry;
 
 // pokemon url -"https://pokeapi.co/api/v2/pokemon/131/,
 //

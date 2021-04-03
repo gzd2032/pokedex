@@ -1,10 +1,15 @@
-import PokemonEntry from './PokemonEntry'
+import PokemonListEntry from './PokemonListEntry'
 import '../CSS/PokemonList.css';
+import getPokemonId from '../utils/GetPokemonId.js'
+
 
 function PokemonList ({pokemon}){
     return(
         <div className="pokemonList">
-            {pokemon.map((p)=>(<PokemonEntry key={p.name} pokemon={p}/>))}
+            {pokemon.map((p)=>{
+                const id = getPokemonId(p.url)
+                return <PokemonListEntry key={id} pokemon={p}/>
+            })}
         </div>
     )
 }
